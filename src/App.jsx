@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-[#f5e3b3] flex items-center justify-center p-4">
-      <div className="lg:min-w-[600px] lg:min-w-[550px]-lg bg-gradient-to-b from-green-600 to-green-200 p-6 rounded-2xl shadow-xl max-w-sm w-full text-center">
+      <div className="lg:min-w-[600px] lg:min-h-[450px]  bg-gradient-to-b from-green-600 to-green-200 p-6 rounded-2xl shadow-xl max-w-sm w-full text-center">
         <h1 className="text-2xl font-semibold italic mb-4">Currency Convertor</h1>
         <label className="block text-left font-medium mb-1">Enter Amount</label>
         <input
@@ -72,7 +72,7 @@ const App = () => {
 
           {/* Switch icon */}
           <div className="pt-6">
-            <span className="text-3xl font-semibold">⇆</span>
+            <span className="text-3xl font-semibold px-1 ">⇆</span>
           </div>
 
           {/* To Currency */}
@@ -106,7 +106,7 @@ const App = () => {
 
         <button
           onClick={fetchExchangeRate}
-          className="w-full bg-purple-500 text-white p-3 rounded-md hover:bg-purple-600 transition"
+          className="w-full bg-purple-500 text-white p-3 font-semibold lg:mt-5 rounded-md hover:bg-purple-600 transition"
         >
           Get Exchange
         </button>
